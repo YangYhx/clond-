@@ -1,0 +1,10 @@
+<!--pages/setting/setting.wxml-->
+<view class='container'>
+<view class='image-r'>
+<image class="user-image" src='{{userInfo.avatarUrl}}'></image>
+</view>
+<view class='list'>用户名：{{userInfo.nickName}}</view>
+<view class='list'>性别：{{userInfo.gender == 1? '男' : '女'}}</view>
+<view class='list'>国家:{{userInfo.country}}</view>
+<view class='list'>城市：{{userInfo.city}}</view>
+</view>

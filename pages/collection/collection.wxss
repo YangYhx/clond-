@@ -1,0 +1,22 @@
+/* pages/collection/collection.wxss */
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .content{
+  margin-top: 20rpx;
+  width: 250rpx;
+  height: 330rpx;
+  display: flex;
+  flex-direction: column;
+}
+.content .image{
+  width: 230rpx;
+  height: 280rpx;
+  box-shadow: 5px 5px 3px #888888;
+}
+.content .title{
+  font-size: 24rpx;
+  line-height: 30rpx;
+}

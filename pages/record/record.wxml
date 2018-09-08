@@ -1,0 +1,22 @@
+<!--pages/record/record.wxml-->
+<view class='container'>
+<view wx:for="{{bookList}}" wx:key="{{index}}" class='list-wrap'>
+  <view class='record-l'>
+  <image src='{{item.book.img}}'></image>
+  </view>
+  <view class='record-r'>
+  <text class='record-title'>{{item.book.title}}</text>
+  <text class='record-author'>作者：{{item.book.author}}</text>
+  <progress percent="{{item.title.total/item.title.index}}" />
+  <view class='record-end'>
+  <text>{{item.title.title}}</text>
+  <navigator url="{{'/pages/readContent/readContent?id=' + item.title._id + '&bookId=' + item.title.bookId }}"  class='continus'>
+      <text>继续阅读</text>
+    
+  </navigator>
+  </view>
+  
+  
+  </view>
+</view>
+</view>

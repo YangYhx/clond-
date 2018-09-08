@@ -1,0 +1,24 @@
+<!--pages/person/person.wxml-->
+<view class='container'>
+<image class='bgImage' src='../../static/imgs/bg.png'></image>
+  <view class='content'>
+    <view class='user-info'>
+      <view>
+        <image class="user-image" src='{{userInfo.avatarUrl}}'></image>
+      </view>
+      <view class="user-name">
+        <text>{{userInfo.nickName}}</text>
+      </view>
+    </view>
+    <view class='user-more'>
+      <view class='user-collection' bindtap='collectJump'>
+        <text>已收藏</text>
+      </view>
+      <view class='user-study' bindtap='info'>
+        <text>个人信息</text>
+      </view>
+    </view>
+    <button wx:if='{{canIUse}}' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='btn'>授权登录</button>
+  </view>
+
+</view>

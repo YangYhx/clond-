@@ -1,0 +1,8 @@
+<!--pages/collection/collection.wxml-->
+<view class='container'>
+  <view wx:for="{{collectData}}" wx:key="index" bindtap='jumpDetail' data-id='{{item.book._id}}' class='content'>
+    <image src='{{item.book.img}}' class='image'></image>
+    <text class='title'>{{item.book.title}}</text>
+  </view>
+</view>
+
